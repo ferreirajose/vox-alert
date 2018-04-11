@@ -15,7 +15,7 @@
     "build:dev": "ng-packagr -p ng-package.json",
     "build:npm": "npm run build:prod && npm run build:copy"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "^5.2.0",
     "@angular/common": "^5.2.0",

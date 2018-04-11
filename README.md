@@ -1,28 +1,28 @@
 
-#### 1. Install Vox Modal globally:
+#### 1. Install Vox Alert globally:
 
 
 ```sh
-$ npm install --global vox-modal
+$ npm install --global vox-alert
 ```
 
-#### 2. Install Vox Modal in your project devDependencies:
+#### 2. Install Vox Alert in your project devDependencies:
 
 ```sh
-$ npm install --save-dev vox-modal
+$ npm install --save-dev vox-alert
 ```
 
 #### 3. Setup Module
 
-Import VoxModalModule into your app.module.
+Import VoxalertModule into your app.module.
 
 ```ts
-import { VoxModalModule } from 'vox-modal';
+import { VoxAlertModule } from 'vox-alert';
 
 @NgModule({
   ...
   imports: [
-    VoxModalModule
+    VoxAlertModule
   ],
 })
 ```
@@ -49,7 +49,7 @@ export class AppComponent {
     }
 
     open() {
-      this.alertService.openModal('AlertServiceService', 'Modal title', 'success');
+      this.alertService.openalert('AlertServiceService', 'alert title', 'success');
     }
 }
 
@@ -59,7 +59,7 @@ export class AppComponent {
 Place the app-alert selector at the bottom of your app.component.html
 ```html
 
-<button type="button" class="btn btn-info" (click)="open()">Create template modal</button>
+<button type="button" class="btn btn-info" (click)="open()">Create template alert</button>
 
 <app-alert></app-alert>
 
