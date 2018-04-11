@@ -20,7 +20,8 @@
   "keywords": [
     "modal",
     "bootstrap",
-    "angular-modal"
+    "angular-modal",
+    "alert"
   ],
   "author": "José Ferreira da Silva",
   "license": "ISC",
