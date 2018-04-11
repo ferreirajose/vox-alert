@@ -1,4 +1,3 @@
-# Getting Started
 
 #### 1. Install Vox Modal globally:
 
@@ -19,7 +18,7 @@ Import VoxModalModule into your app.module.
 
 ```ts
 import { VoxModalModule } from 'vox-modal';
- 
+
 @NgModule({
   ...
   imports: [
@@ -65,7 +64,6 @@ Place the app-alert selector at the bottom of your app.component.html
 <app-alert></app-alert>
 
 ```
-
 
 ### Alert Types
 The following message types are avialable. The typess below represent the Bootstrap [alert](https://v4-alpha.getbootstrap.com/components/alerts/) classes.
