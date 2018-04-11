@@ -44,7 +44,7 @@ import { AlertService } from 'vox-alert/alert/alert-service';
 export class AppComponent {
     public title = 'app';
     private _alertService: AlertService;
-    
+
     constructor(
       alertService: AlertService
     ) {
@@ -52,7 +52,7 @@ export class AppComponent {
     }
 
     open() {
-      this._alertService.openalert('AlertServiceService', 'alert title', 'success');
+      this._alertService.openModal('AlertServiceService', 'alert title', 'success');
     }
 }
 
