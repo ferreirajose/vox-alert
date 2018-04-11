@@ -2,21 +2,5 @@
   "$schema": "./node_modules/ng-packagr/ng-package.schema.json",
   "lib": {
     "entryFile": "index.ts"
-  },
-  "whitelistedNonPeerDependencies": [
-    "angular/animations",
-    "angular/common",
-    "angular/compiler",
-    "angular/core",
-    "angular/forms",
-    "angular/http",
-    "angular/platform-browser",
-    "angular/platform-browser-dynamic",
-    "angular/router",
-    "bootstrap",
-    "core-js",
-    "ngx-bootstrap",
-    "rxjs",
-    "zone.js"
-  ]
+  }
 }

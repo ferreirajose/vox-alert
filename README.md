@@ -14,7 +14,7 @@ $ npm install --save-dev vox-alert
 
 #### 3. Setup Module
 
-Import VoxalertModule into your app.module.
+Import VoxAlertModule into your app.module.
 
 ```ts
 import { VoxAlertModule } from 'vox-alert';
@@ -34,22 +34,25 @@ Import AlertService into your app.component
 ```ts
 import { Component } from '@angular/core';
 
-import { AlertService } from './alert/alert-service';
+import { AlertService } from 'vox-alert/alert/alert-service';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-    title = 'app';
+    public title = 'app';
+    private _alertService: AlertService;
+    
     constructor(
-      private alertService: AlertService
+      alertService: AlertService
     ) {
-
+      this._alertService = alertService;
     }
 
     open() {
-      this.alertService.openalert('AlertServiceService', 'alert title', 'success');
+      this._alertService.openalert('AlertServiceService', 'alert title', 'success');
     }
 }
 
