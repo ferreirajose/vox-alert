@@ -3,6 +3,18 @@
   "name": "vox-alert",
   "version": "0.0.1",
   "private": false,
+  "dependencies": {
+    "@angular/common": "5.2.6",
+    "@angular/compiler": "5.2.6",
+    "@angular/core": "5.2.6",
+    "@angular/http": "5.2.6",
+    "@angular/platform-browser": "5.2.6",
+    "@angular/platform-browser-dynamic": "5.2.6",
+    "bootstrap": "^4.0.0",
+    "ngx-bootstrap": "^2.0.3",
+    "rxjs": "5.0.2",
+    "zone.js": "0.7.4"
+  },
   "peerDependencies": {
     "@angular/common": "^5.1.0",
     "@angular/core": "^5.1.0",
