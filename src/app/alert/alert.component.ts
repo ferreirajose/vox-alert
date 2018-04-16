@@ -7,7 +7,7 @@ import {
   Input
 } from '@angular/core';
 
-import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
+import { NgbModal, NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
 import { Subscription } from 'rxjs/Subscription';
 
 import { AlertService } from './alert-service';
@@ -23,13 +23,13 @@ export class AlertComponent implements OnInit, OnDestroy {
 
   private _subscription: Subscription;
   public show: boolean;
-  public modalRef: BsModalRef;
+  public modalRef: NgbModalRef;
   public body: string;
   public alert: string;
   public title: string;
 
   constructor(
-    private modalService: BsModalService,
+    private modalService: NgbModal,
     private alertService: AlertService
   ) {
     this.show = false;
@@ -42,10 +42,10 @@ export class AlertComponent implements OnInit, OnDestroy {
           this.body = state.mBody;
           this.alert = state.mAlert;
           this.title = state.mTitle;
-          this.modalRef = this.modalService.show(this.content);
+          this.modalRef = this.modalService.open(this.content);
           return;
         }
-        this.modalRef.hide();
+        this.modalRef.close();
       }
     );
   }
